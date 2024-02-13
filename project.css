@@ -1,0 +1,95 @@
+@keyframes moveRight {
+    from {
+      top: 0;
+      left: 0;
+      visibility: visible;
+    }
+    to {
+      top: 0;
+      left: calc(100% - 100px);
+      visibility: hidden;
+    }
+  }
+
+  @keyframes moveDown {
+    from {
+      right: 0;
+      top: 0;
+      visibility: visible;
+    }
+    to {
+      right: 0;
+      top: calc(100% - 100px);
+      visibility: hidden;
+    }
+  }
+
+  @keyframes moveLeft {
+    from {
+      left: calc(100% - 100px);
+      bottom: 0;
+      visibility: visible;
+    }
+    to {
+      left: 0;
+      bottom: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes moveTop {
+    from {
+      left: 0;
+      top: calc(100% - 100px);
+      visibility: visible;
+    }
+    to {
+      left: 0;
+      top: 0;
+      visibility: hidden;
+    }
+  }
+
+  .p {
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    visibility: hidden; 
+  }
+
+  .p1 {
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    visibility: hidden; 
+  }
+
+  .p2 {
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    visibility: hidden; 
+  }
+
+  .p3 {
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    visibility: hidden; 
+  }
+
+  .p.animated {
+    animation: moveRight 5s ease-in-out forwards;
+  }
+
+  .p1.animated {
+    animation: moveDown 5s ease-in-out 5s forwards;
+  }
+
+  .p2.animated {
+    animation: moveLeft 5s ease-in-out 10s forwards;
+  }
+
+  .p3.animated {
+    animation: moveTop 5s ease-in-out 15s forwards;
+  }
